@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" prefHeight="400.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz.views.MenuView">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="208.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="bookApartmentButton" alignment="CENTER" mnemonicParsing="false" text="Book an apartment" />
+      <Button fx:id="manageClientsButton" mnemonicParsing="false" text="Manage clients" GridPane.rowIndex="2" />
+      <Button fx:id="showHotelMapButton" mnemonicParsing="false" text="Show hotel map" GridPane.rowIndex="3" />
+      <Button fx:id="manageBookingsButton" mnemonicParsing="false" text="Manage bookings" GridPane.rowIndex="1" />
+      <GridPane GridPane.rowIndex="4">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="settingsButton" mnemonicParsing="false" text="Settings" GridPane.rowIndex="1" />
+            <Button fx:id="quitButton" mnemonicParsing="false" text="Quit" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

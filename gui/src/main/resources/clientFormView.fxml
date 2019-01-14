@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="pz.views.ClientFormView" maxHeight="-Infinity" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" prefHeight="400.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="nameLabel" text="Name*" />
+      <Label fx:id="surnameLabel" text="Surname*" GridPane.rowIndex="2" />
+      <Label fx:id="emailLabel" text="E-mail*" GridPane.rowIndex="4" />
+      <Label fx:id="addressLabel" text="Address" GridPane.rowIndex="6" />
+      <Label fx:id="postalCodeLabel" text="Postal code" GridPane.rowIndex="8" />
+      <Label fx:id="cityLabel" text="City" GridPane.rowIndex="10" />
+      <GridPane GridPane.rowIndex="12">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="confirmButton" mnemonicParsing="false" text="Save" GridPane.columnIndex="1" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </GridPane>
+      <TextField fx:id="nameTextField" GridPane.rowIndex="1" />
+      <TextField fx:id="surnameTextField" GridPane.rowIndex="3" />
+      <TextField fx:id="emailTextField" GridPane.rowIndex="5" />
+      <TextField fx:id="addressTextField" GridPane.rowIndex="7" />
+      <TextField fx:id="postalCodeTextField" GridPane.rowIndex="9" />
+      <TextField fx:id="cityTextField" GridPane.rowIndex="11" />
+   </children>
+</GridPane>

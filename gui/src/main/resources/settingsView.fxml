@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="300.0" maxWidth="250.0" minHeight="300.0" minWidth="250.0" prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz.views.SettingsView">
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label fx:id="header" text="Settings">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="languageLabel" text="Language" GridPane.rowIndex="1" />
+      <ChoiceBox fx:id="languageChoiceBox" prefWidth="150.0" GridPane.rowIndex="2" />
+      <Label fx:id="skinLabel" text="Skin" GridPane.rowIndex="3" />
+      <ChoiceBox fx:id="skinChoiceBox" prefWidth="150.0" GridPane.rowIndex="4" />
+      <Button fx:id="applyButton" mnemonicParsing="false" text="Apply" GridPane.rowIndex="5" />
+   </children>
+</GridPane>

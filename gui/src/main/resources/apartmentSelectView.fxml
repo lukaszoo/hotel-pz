@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pz.views.ApartmentSelectView">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="154.0" minWidth="95.0" prefWidth="107.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="505.0" minWidth="10.0" prefWidth="493.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints maxHeight="24.0" minHeight="24.0" prefHeight="24.0" />
+        <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="24.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="250.0" minHeight="10.0" prefHeight="232.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <CheckBox fx:id="tvCheckbox" mnemonicParsing="false" text="TV" />
+        <CheckBox fx:id="balconyCheckbox" mnemonicParsing="false" text="Balcony" GridPane.rowIndex="2" />
+        <CheckBox fx:id="jaccuziCheckbox" mnemonicParsing="false" text="Jaccuzi" GridPane.rowIndex="1" />
+        <CheckBox fx:id="wifiCheckbox" mnemonicParsing="false" text="WiFi" GridPane.rowIndex="3" />
+        <CheckBox fx:id="bathroomCheckbox" mnemonicParsing="false" text="Bathroom" GridPane.rowIndex="4" />
+        <DatePicker fx:id="endDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button fx:id="showHotelMapButton" mnemonicParsing="false" text="Map" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TableView fx:id="apartmentsTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label fx:id="startDateLabel" text="From" GridPane.columnIndex="1" />
+        <Label fx:id="endDateLabel" text="To" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <DatePicker fx:id="startDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label fx:id="capacityLabel" text="Capacity" GridPane.rowIndex="5" />
+        <Spinner fx:id="capacitySpinner" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <GridPane GridPane.rowIndex="6">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="totalCostLabel" text="Total cost" GridPane.rowIndex="1" />
+            <Label fx:id="totalCostValueLabel" text="Total cost value" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="goBackButton" mnemonicParsing="false" text="Back" />
+              <Button fx:id="apartmentSelectButton" mnemonicParsing="false" text="Select" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+    </children>
+</GridPane>

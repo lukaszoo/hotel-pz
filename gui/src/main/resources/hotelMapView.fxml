@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:controller="pz.views.HotelMapView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="193.0" minHeight="10.0" prefHeight="66.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Rectangle fx:id="room5Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.rowIndex="2" />
+      <Rectangle fx:id="room4Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Rectangle fx:id="room9Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.rowIndex="1" />
+      <Rectangle fx:id="room3Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Rectangle fx:id="room7Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Rectangle fx:id="room10Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Rectangle fx:id="room6Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Rectangle fx:id="room2Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <Rectangle fx:id="room8Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Rectangle fx:id="room1Rectangle" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.rowIndex="3" />
+      <DatePicker fx:id="datePicker" />
+      <Label text="10" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="9" GridPane.rowIndex="1" />
+      <Label text="4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label text="5" GridPane.rowIndex="2" />
+      <Label text="1" GridPane.rowIndex="3" />
+      <Label text="8" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="7" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="6" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
